@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Firebase Authentication</title>
+<link rel="stylesheet" href="cssFile.css">
+</head>
+
+<body>
+<center>
+<div id="login-box">
+
+  <div class="center">
+    <h1 id='status'>Login Admin</h1>
+    
+    <input type="text" id="email" name="email" placeholder="E-mail" />
+    <input type="password" id="password" name="password" placeholder="Password" />
+    
+    
+    
+    <input type="submit" id='login' name="login" value="Login"href="adminpage.php" />
+    <input type="submit" value="Register" 
+    onclick="window.location='adminregis.html';" />
+
+  </div>
+</center>
+  
+  
+ 
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+    import {getDatabase,set,ref,update} from "https://www.gstatic.com/firebasejs/9.6.9/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAyvikkW-3u4EPd7qJz5NNMU5PHNyroBfc",
+      authDomain: "web-app-bc04a.firebaseapp.com",
+      databaseURL: "https://web-app-bc04a-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "web-app-bc04a",
+      storageBucket: "web-app-bc04a.appspot.com",
+      messagingSenderId: "413332415741",
+      appId: "1:413332415741:web:d2c87c4f719233848c4a94"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+
+
+  login.addEventListener('click',(e)=>{
+    var emailadmin = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    signInWithEmailAndPassword(auth, emailadmin, password)
+  .then((adminCredential) => {
+    // Signed in 
+    const admin = adminCredential.user;
+    
+      
+    window.location="../adminpage.php"
+ 
+    
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    
+     alert('errormessage');
+  });
+
+  });
+
+  </script>
+
+</html>
