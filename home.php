@@ -26,12 +26,9 @@ body {font-size:16px;}
     <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
     <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
     <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <!-- <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>  -->
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
-  <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
-            </div>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -79,29 +76,48 @@ body {font-size:16px;}
 
   <!-- Services -->
   <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>กฎหมู่บ้าน.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>มี 6 ข้อ ดังนี้</p>
+    <p> 1. ห้ามก่อความวุ่นวายให้คนในหมู่บ้าน
+        2. ห้ามเล่นการพนันในเขตหมู่บ้าน
+        3. ห้ามไม่ให้มีการเสพหรือจำหน่ายสารเสพติดในหมู่บ้าน
+        4. ห้ามพกพาหรือใช้งานอาวุธปืนในหมู่บ้าน
+        5. ให้ทิ้งขยะลงในที่ที่หมู่บ้านจัดเตรียมไว้
+        6. ต้องดูแลสัตว์เลี้ยงของตัวเอง หากปล่อยทิ้งไม่ดูแล ทางหมู่บ้านจะนำสัตว์เลี้ยงตัวนั้นไปหาเจ้าของใหม่ที่มูลนิธิ 
     </p>
   </div>
   
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>ข้อแนะนำการใช้สระว่ายน้ำและfitness.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>รายละเอียดเกี่่ยวกับสระน้ำและFitness </p>
+    <p><b>สระว่ายน้ำ</b></p>
+    <p>สระว่ายน้ำของหมู่บ้านแบ่งออกเป็น3ส่วน 1.ส่วนของเด็ก มีความลึก 50 เซนติเมตร มีขนาด 15 ตารางเมตร 2. 
+      ส่วนที่ 2 เป็นสระกลาง มีความลึก 1.5 เมตร มีขนาด 20 ตารางเมตร 4*5 เมตร  </p>
+    <p>ข้อแนะนำการใช้งานสระว่ายน้ำ.</p>
+    <p> 1. ต้องสวมชุดว่ายน้ำเมื่อเข้าใช้สระว่ายน้ำ
+        2. ต้องล้างทำความสะอาดร่างกายก่อนลงสระว่ายน้ำ
+        3. ห้ามกระโดดลงสระว่ายน้ำ
+        4. ห้ามส่งเสียงดังรบกวนขณะใช้สระว่ายน้ำ 
+    </p>
+    <p><b> Fitness </b></p>
+    <p>fitness ของหมู่บ้าน มีเครื่องออกกำลังกายทั้งหมด 16 เครื่อง แบ่งออกเป็น ลู่วิ่งไฟฟ้า 4 เครื่อง 
+       จักรยานนั่งปั่น 4 เครื่อง อุปกรณ์สร้างกล้ามเนื้อ 3 เครื่อง เครื่องเดินวงรี 3 เครื่อง ม้านั่งซิทอัพ 2 อัน
+       และมีโต๊ะปิงปอง 2 โต๊ะ ไม้ปิงปอง 4 อัน ลูกปิงปอง 16 ลูก
+    </p>
+    <p>ข้อแนะนำการใช้ Fitness.</p>
+    <p> 1. ต้องรองเท้าผ้าใบขณะเข้าใช้งาน
+        2. ไม่สร้างความวุ่นวายขณะใช้งาน fitness
+        3. กรุณาทำความสะอาดเครื่องออกกำลังกายหลังใช้เสร็จหากมีคราบเหงื่อหรือสิ่งสกปรกด้วย
+        4. กรุณาปิดไฟห้องหลังใช้เสร็จหากไม่มีใช้ใช้งานอยู่
     </p>
     <p><b>Our designers are thoughtfully chosen</b>:</p>
   </div>
 
   <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
+  <!-- <div class="w3-row-padding w3-grayscale">
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-grey">
         <img src="/w3images/team2.jpg" alt="John" style="width:100%">
@@ -132,10 +148,10 @@ body {font-size:16px;}
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
+  <!-- <div class="w3-container" id="packages" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
@@ -177,7 +193,7 @@ body {font-size:16px;}
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
   
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
