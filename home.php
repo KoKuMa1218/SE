@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
+body {font-size:18px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
@@ -16,7 +16,7 @@ body {font-size:16px;}
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-dark-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
     <h3 class="w3-padding-64"><b>Company<br>Name</b></h3>
@@ -24,8 +24,8 @@ body {font-size:16px;}
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">กฎหมู่บ้าน</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ข้อแนะนำการใช้สระว่ายน้ำและfitness</a> 
     <!-- <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>  -->
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
@@ -46,22 +46,22 @@ body {font-size:16px;}
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo"><b>Interior Design</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Example.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
   
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="w3images/kitchen.jpg" style="width:100%" onclick="onClick(this)" alt="Simple Kitchen">
+      <img src="w3images/workingroom.jpg" style="width:100%" onclick="onClick(this)" alt="working space">
+      
     </div>
 
     <div class="w3-half">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+      <img src="w3images/bathroom.jpg" style="width:100%" onclick="onClick(this)" alt="American Standard Bathroom">
+      <img src="w3images/bedroom.jpg" style="width: 100%" onclick="onClick(this)" alt="Minimal Bedroom">
+      <img src="w3images/livingroom.jpg" style="width: 100%" onclick="onClick(this)" alt="Minimal design living ">
     </div>
   </div>
 
@@ -92,10 +92,10 @@ body {font-size:16px;}
   <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>ข้อแนะนำการใช้สระว่ายน้ำและfitness.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>รายละเอียดเกี่่ยวกับสระน้ำและFitness </p>
+    <p><b>รายละเอียดเกี่่ยวกับสระน้ำและFitness </b> </p>
     <p><b>สระว่ายน้ำ</b></p>
-    <p>สระว่ายน้ำของหมู่บ้านแบ่งออกเป็น3ส่วน 1.ส่วนของเด็ก มีความลึก 50 เซนติเมตร มีขนาด 15 ตารางเมตร 2. 
-      ส่วนที่ 2 เป็นสระกลาง มีความลึก 1.5 เมตร มีขนาด 20 ตารางเมตร 4*5 เมตร  </p>
+    <p>สระว่ายน้ำของหมู่บ้านแบ่งออกเป็น2ส่วน 1.ส่วนของเด็ก มีความลึก 50 เซนติเมตร มีขนาด 15 ตารางเมตร </p><br>
+    <p> 2.ส่วนที่ 2 เป็นสระกลาง มีความลึก 1.5 เมตร มีขนาด 20 ตารางเมตร 4*5 เมตร  </p><br>
     <p>ข้อแนะนำการใช้งานสระว่ายน้ำ.</p>
     <p> 1. ต้องสวมชุดว่ายน้ำเมื่อเข้าใช้สระว่ายน้ำ
         2. ต้องล้างทำความสะอาดร่างกายก่อนลงสระว่ายน้ำ
@@ -108,12 +108,11 @@ body {font-size:16px;}
        และมีโต๊ะปิงปอง 2 โต๊ะ ไม้ปิงปอง 4 อัน ลูกปิงปอง 16 ลูก
     </p>
     <p>ข้อแนะนำการใช้ Fitness.</p>
-    <p> 1. ต้องรองเท้าผ้าใบขณะเข้าใช้งาน
-        2. ไม่สร้างความวุ่นวายขณะใช้งาน fitness
-        3. กรุณาทำความสะอาดเครื่องออกกำลังกายหลังใช้เสร็จหากมีคราบเหงื่อหรือสิ่งสกปรกด้วย
-        4. กรุณาปิดไฟห้องหลังใช้เสร็จหากไม่มีใช้ใช้งานอยู่
-    </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
+    <p> <b>1.</b> ต้องรองเท้าผ้าใบขณะเข้าใช้งาน</p><br>
+    <p>  <b> 2.</b> ไม่สร้างความวุ่นวายขณะใช้งาน fitness</p><br>
+    <p>    <b>3.</b> กรุณาทำความสะอาดเครื่องออกกำลังกายหลังใช้เสร็จหากมีคราบเหงื่อหรือสิ่งสกปรกด้วย</p><br>
+    <p>    <b>4.</b> กรุณาปิดไฟห้องหลังใช้เสร็จหากไม่มีใช้ใช้งานอยู่</p><br>
+
   </div>
 
   <!-- The Team -->
@@ -199,22 +198,9 @@ body {font-size:16px;}
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>  
+    <!-- <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p> -->
+    <p>ช่องทางติดต่อ เบอร์ 00-0x0x-x0xx </p><br>
+    <p>email. niti@villege.com </p><br>
   </div>
 
 <!-- End page content -->
