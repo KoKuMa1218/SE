@@ -6,30 +6,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:18px;}
+body {font-size:20px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
 </head>
 <body>
+<!-- <section>
+
+</section> -->
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-dark-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+<!-- <nav class="w3-sidebar w3-dark-grey w3-collapse w3-top w3-large w3-padding w3-sidebar w3-bar-block w3-card w3-animate-left" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large" style="width:100%;font-size:22px">Close Menu</a>
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button> -->
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black " style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Company<br>Name</b></h3>
+    <h3 class="w3-padding-64"><b>หมู่บ้าน<br>...</b></h3>
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Example</a> 
     <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">กฎหมู่บ้าน</a> 
     <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ข้อแนะนำการใช้สระว่ายน้ำและfitness</a> 
-    <!-- <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>  -->
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <!-- <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a> -->
   </div>
-</nav>
+<!-- </nav> -->
+</div>
+
+<div id="main">
+
+<div class="w3-dark-grey">
+  <button id="openNav" class="w3-button w3-dark-grey w3-xlarge " onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <center>
+    <h1>เว็บนิติหมู่บ้าน</h1>
+</center>
+  </div>
+</div>
+
+<div class="w3-container" id="services" style="margin-top:75px">
+  
+    <h1 class="w3-xxxlarge w3-text-blue"><b>ข่าวสารหมู่บ้าน.</b></h1>
+    <hr style="width:80px;border:5px solid blue" class="w3-round">
+<center>
+<h1 class="w3-xxlarge w3-text-blue"><p>ข่าวสารหมู่บ้านประจำสัปดาห์</p></h1>
+</center>
+ <h1 style="font-size:25px;"><p> <b>-เนื่องจากในวันเสาร์ที่ 2 เมษายน และวัน อาทิตย์ที่ 3 เมษายนนี้ทางหมู่บ้านจะมีการฉีดพ่นยากำจัดยุงภายในหมู่บ้าน
+      จึงเรียนมาให้ทราบโดยทั่วกัน</b>
+    </p></h1>
+  </div>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
@@ -42,13 +76,14 @@ body {font-size:18px;}
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
+  <center>
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Interior Design</b></h1>
+    <!-- <h1 class="w3-jumbo"><b>เว็บนิติหมู่บ้าน</b></h1> -->
     <h1 class="w3-xxxlarge w3-text-red"><b>Example.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
+</center>
   
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
@@ -73,25 +108,30 @@ body {font-size:18px;}
       <p id="caption"></p>
     </div>
   </div>
-
+  
+  
   <!-- Services -->
   <div class="w3-container" id="services" style="margin-top:75px">
+  <center>
     <h1 class="w3-xxxlarge w3-text-red"><b>กฎหมู่บ้าน.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>มี 6 ข้อ ดังนี้</p>
-    <p> 1. ห้ามก่อความวุ่นวายให้คนในหมู่บ้าน
-        2. ห้ามเล่นการพนันในเขตหมู่บ้าน
-        3. ห้ามไม่ให้มีการเสพหรือจำหน่ายสารเสพติดในหมู่บ้าน
-        4. ห้ามพกพาหรือใช้งานอาวุธปืนในหมู่บ้าน
-        5. ให้ทิ้งขยะลงในที่ที่หมู่บ้านจัดเตรียมไว้
-        6. ต้องดูแลสัตว์เลี้ยงของตัวเอง หากปล่อยทิ้งไม่ดูแล ทางหมู่บ้านจะนำสัตว์เลี้ยงตัวนั้นไปหาเจ้าของใหม่ที่มูลนิธิ 
+</center>
+    <p>กฎของหมู่บ้าน มี 6 ข้อ ดังนี้</p>
+    <p> 1. ห้ามก่อความวุ่นวายให้คนในหมู่บ้าน <br>
+        2. ห้ามเล่นการพนันในเขตหมู่บ้าน <br>
+        3. ห้ามไม่ให้มีการเสพหรือจำหน่ายสารเสพติดในหมู่บ้าน <br>
+        4. ห้ามพกพาหรือใช้งานอาวุธปืนในหมู่บ้าน <br>
+        5. ให้ทิ้งขยะลงในที่ที่หมู่บ้านจัดเตรียมไว้ <br>
+        6. ต้องดูแลสัตว์เลี้ยงของตัวเอง หากปล่อยทิ้งไม่ดูแล ทางหมู่บ้านจะนำสัตว์เลี้ยงตัวนั้นไปหาเจ้าของใหม่ที่มูลนิธิ  <br>
     </p>
   </div>
   
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
+  <center>
     <h1 class="w3-xxxlarge w3-text-red"><b>ข้อแนะนำการใช้สระว่ายน้ำและfitness.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
+    </center>
     <p><b>รายละเอียดเกี่่ยวกับสระน้ำและFitness </b> </p>
     <p><b>สระว่ายน้ำ</b></p>
     <p>สระว่ายน้ำของหมู่บ้านแบ่งออกเป็น2ส่วน 1.ส่วนของเด็ก มีความลึก 50 เซนติเมตร มีขนาด 15 ตารางเมตร </p><br>
@@ -114,111 +154,49 @@ body {font-size:18px;}
     <p>    <b>4.</b> กรุณาปิดไฟห้องหลังใช้เสร็จหากไม่มีใช้ใช้งานอยู่</p><br>
 
   </div>
-
-  <!-- The Team -->
-  <!-- <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Jane Doe</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Architect</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Packages / Pricing Tables -->
-  <!-- <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-half w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">10 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">20% furniture discount</li>
-        <li class="w3-padding-16">Good deals</li>
-        <li class="w3-padding-16">
-          <h2>$ 199</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-        
-    <div class="w3-half">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-        <li class="w3-padding-16">Floorplanning</li>
-        <li class="w3-padding-16">50 hours support</li>
-        <li class="w3-padding-16">Photography</li>
-        <li class="w3-padding-16">50% furniture discount</li>
-        <li class="w3-padding-16">GREAT deals</li>
-        <li class="w3-padding-16">
-          <h2>$ 249</h2>
-          <span class="w3-opacity">per room</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div> -->
   
+
+
   <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
+  <!-- <div class="w3-container" id="contact" style="margin-top:75px">
+  <center>
     <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
+    </center> -->
     <!-- <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p> -->
-    <p>ช่องทางติดต่อ เบอร์ 00-0x0x-x0xx </p><br>
+    <!-- <p>ช่องทางติดต่อ เบอร์ 00-0x0x-x0xx </p><br>
     <p>email. niti@villege.com </p><br>
-  </div>
+  </div> -->
+  
 
 <!-- End page content -->
 </div>
 
+
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+
+<p class="w3-center w3-text-red w3-xxlarge">Contact </p>
+<p>ช่องทางติดต่อ เบอร์ 00-0x0x-x0xx </p>
+<p>email. niti@villege.com </p>
+  
+
+</div>
 
 <script>
 // Script to open and close sidebar
 function w3_open() {
+  document.getElementById("main").style.marginLeft = "20%";
+  document.getElementById("mySidebar").style.width = "20%";
   document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
 }
  
 function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
   document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
 }
 
 // Modal Image Gallery
